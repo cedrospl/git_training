@@ -10,4 +10,4 @@ Zobacz moj fragment kodu w Pythonie!:
   ```def my_function():
   print("Hello world!")```
   
-  Zobacz instrukcje MARKDOWN:[GitHub](http://github.com)
+  Zobacz instrukcje MARKDOWN:[Instrukcja](https://github.com/cedrospl/git_training/blob/master/README.md)
