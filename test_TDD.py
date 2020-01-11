@@ -1,5 +1,6 @@
 import unittest
 import TDD
+import random
 
 class testUnitTest(unittest.TestCase) :
 
@@ -63,11 +64,23 @@ class testUnitTest(unittest.TestCase) :
 
     def test_f3_4(self):
         w1 = "other"
-        w2 = TDD.f3("random.choice(range(4,1000))")
+        w2 = TDD.f3(random.choice(range(4,1000)))
         self.assertEqual(w1,w2)
 
+    def test_f4_1(self):
+        w1 = "ala ma kota"
+        w2 = TDD.f4("ala")
+        self.assertEqual(w1,w2)
 
-
+    def test_f4_2(self):
+        w1 = "kot ma kota"
+        w2 = TDD.f4("kot")
+        self.assertEqual(w1,w2)
+    
+    def test_f4_3(self):
+        w1 = "kot ma kota i psa"
+        w2 = TDD.f4("kot","psa")
+        self.assertEqual(w1,w2)
 
 if __name__ == '__main__':
     unittest.main()

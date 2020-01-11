@@ -17,3 +17,8 @@ def f3(x):
     else:
         return "other"
 
+def f4(x, y = ""):
+    if y == "":
+        return (x + " ma kota")
+    else:
+        return (x + " ma kota i " + y)
