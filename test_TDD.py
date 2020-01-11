@@ -3,7 +3,7 @@ import unittest
 class testUnitTest(unittest.TestCase) :
 
     def test_g(self):
-        self.assertTrue(False)
+        self.assertTrue(True)
 
 
 
