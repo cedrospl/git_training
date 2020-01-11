@@ -1,6 +1,5 @@
 import unittest
 import TDD
-import string
 
 class testUnitTest(unittest.TestCase) :
 
@@ -46,6 +45,26 @@ class testUnitTest(unittest.TestCase) :
         w1 = "BUUUUM"
         w2 = TDD.f2()
         self.assertEqual(w1, "BUUUUM")
+
+    def test_f3_1(self):
+        w1 = "jeden"
+        w2 = TDD.f3(1)
+        self.assertEqual(w1,w2)
+
+    def test_f3_2(self):
+        w1 = "dwa"
+        w2 = TDD.f3(2)
+        self.assertEqual(w1,w2)
+
+    def test_f3_3(self):
+        w1 = "trzy"
+        w2 = TDD.f3(3)
+        self.assertEqual(w1,w2)
+
+    def test_f3_4(self):
+        w1 = "other"
+        w2 = TDD.f3("random.choice(range(4,1000))")
+        self.assertEqual(w1,w2)
 
 
 
